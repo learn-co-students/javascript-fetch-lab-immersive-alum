@@ -1,7 +1,7 @@
+import token from 'token.js';
+
 function getIssues() {
   const issue = 'javascript-fetch-lab/issues/';
-
-  const token = '67aae0649acc0701480882a053e06f46d3e22489';
 
   const testBody = {
     body: 'test body'
@@ -23,8 +23,6 @@ function showIssues(json) {}
 function createIssue() {
   const issue = 'javascript-fetch-lab/issues/';
 
-  const token = '67aae0649acc0701480882a053e06f46d3e22489';
-
   const testBody = {
     body: 'test body'
   };
@@ -45,8 +43,6 @@ function showResults(json) {}
 function forkRepo() {
   const repo = 'learn-co-curriculum/javascript-fetch-lab';
   //use fetch to fork it!
-
-  const token = '67aae0649acc0701480882a053e06f46d3e22489';
 
   fetch(`http://api.github.com/repos/${repo}`, {
     method: 'post',
